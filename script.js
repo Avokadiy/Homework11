@@ -1,7 +1,7 @@
 const socket = new WebSocket('ws:localhost:8080');
 
 socket.addEventListener('open', (event) => {
-    console.log('Соединение установлено'); // Доработать
+    console.log('Соединение установлено'); // Нужно по ТЗ
 })
 
 socket.addEventListener('message', (event) => {
@@ -26,3 +26,4 @@ document.querySelector(".messages_input").addEventListener("keyup", function (ev
             document.querySelector(".messages_send").click();
         }
     });
+
